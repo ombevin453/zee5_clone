@@ -76,5 +76,4 @@ Contributions are welcome! Feel free to fork the repo and submit pull requests.
 This project is for educational purposes only and does not intend to infringe any copyrights.  
 
 ---
-Enjoy coding! 🚀
 
