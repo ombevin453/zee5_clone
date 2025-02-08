@@ -57,7 +57,6 @@ npm install
 ```sh
 npm run dev
 ```
-This will start the project at **http://localhost:5173/**.
 
 ## 📌 Deployment  
 
