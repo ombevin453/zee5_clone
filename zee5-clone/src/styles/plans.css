@@ -1,0 +1,113 @@
+/* Container for the entire plans section */
+.plans-container {
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  /* Title of the section */
+  .plans-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1a0033;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  /* Layout for the plans */
+  .plans {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  /* Common styles for all plan cards */
+  .plan-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    width: 280px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Hover effect for all plans */
+  .plan-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border: 2px solid #9c1e6e;
+  }
+  
+  /* Name of the plan */
+  .plan-name {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #1a0033;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+  }
+  
+  /* Price for the plan */
+  .plan-price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #9c1e6e;
+    margin-bottom: 10px;
+  }
+  
+  /* Description of the plan */
+  .plan-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  /* Subscribe button styles */
+  .plan-btn {
+    background-color: #9c1e6e;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .plan-btn:hover {
+    background-color: #1a0033;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .plans {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .plan-card {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .plans-container {
+      padding: 30px 10px;
+    }
+  
+    .plans-title {
+      font-size: 1.8rem;
+    }
+  
+    .plan-card {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+  

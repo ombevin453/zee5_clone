@@ -1,0 +1,107 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.AppBar {
+  background-color: #1A0033;
+}
+
+.Toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
+}
+
+.Button {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.Button:hover {
+  color: #f1f1f1;
+}
+
+@media (max-width: 600px) {
+  .logo-img {
+    height: 40px;
+  }
+
+  .Button {
+    font-size: 14px;
+  }
+}
+
+/* Search Box and Menu Button */
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-box input {
+  background: #fff;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.search-box .MuiIconButton-root {
+  color: white;
+}
+
+/* Mobile Menu */
+.Drawer {
+  width: 250px;
+}
+
+.Drawer .MuiList-root {
+  padding: 0;
+}
+
+.Drawer .MuiListItem-root {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.Drawer .MuiListItem-root:hover {
+  background-color: #1a0033;
+  color: #fff;
+}
+
+/* Desktop Styles */
+@media (min-width: 600px) {
+  .MenuItems {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+/* Adjustments for Drawer Icon */
+.MuiIconButton-root {
+  color: white;
+  padding: 10px;
+}
+
+/* Language Icon */
+.MuiIconButton-root > .MuiSvgIcon-root {
+  color: white !important;
+}
+
+.Button, .MuiButton-root {
+  text-transform: capitalize !important;
+}
+
+/* Media Query for Tablets */
+@media (max-width: 1024px) {
+  .MuiButton-root {
+    font-size: 14px;
+  }
+}

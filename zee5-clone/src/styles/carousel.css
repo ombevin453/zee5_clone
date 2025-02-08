@@ -1,0 +1,45 @@
+.carousel-container {
+  width: 95%; /* Adjust width to fit various screen sizes */
+  padding: 0;
+  margin-top: 5px;
+  overflow: hidden;
+  height: 650px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-wrapper {
+  width: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+  width: 85%; /* Default size for larger screens */
+  height: auto;
+  max-width: none;
+  max-height: none;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+
+.swiper-slide-active .carousel-image {
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* For smaller screens, increase image size moderately */
+@media (max-width: 768px) {
+  .carousel-container {
+    height: 450px; /* Adjust container height */
+  }
+
+  .carousel-image {
+    width: 65vw; /* Make the images slightly smaller but still larger than before */
+  }
+}
